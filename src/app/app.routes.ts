@@ -19,9 +19,9 @@ export const routes: Routes = [
       component:TiffinsComponent,
       canActivate:[authServiceGuard]
     },{
-    path: 'lunch',
-    component: LunchComponent,
-    canActivate:[authServiceGuard]
+      path: 'lunch',
+      component: LunchComponent,
+      canActivate:[authServiceGuard]
     },{
       path:'login',
       component:LoginPageComponent

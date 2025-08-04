@@ -1,15 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule,ActivatedRoute } from '@angular/router';
-
 @Component({
   selector: 'app-lunch',
   imports: [CommonModule,RouterModule],
+  
   templateUrl: './lunch.component.html',
-  styleUrl: './lunch.component.scss'
+  styleUrls: ['./lunch.component.scss']
 })
 
-export class LunchComponent {
+export class LunchComponent implements OnInit{
 
 
   constructor(private route: ActivatedRoute) {}
